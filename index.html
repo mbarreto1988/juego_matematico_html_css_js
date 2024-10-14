@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <meta content="text/html; charset=utf-8" http-equiv="content-type">
+            <title>El juego de las 100 cajas</title>
+            <style>
+                  #titabla {
+                        font-size: 30px;
+                        font: bold;
+                  }
+
+                  td {
+                        vertical-align: baseline;
+                        font-size: 30px;
+                        padding: 2px;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                  }
+
+                  #Reglas {
+                        font-size: 15px;
+                        width: 560px;
+                        background: LightGray;
+                        border: 3px dashed red;
+                        margin: 0 auto;
+                  }
+            </style>
+      </head>
+      <body>
+            <div style="text-align: center ; font-size:25px">
+                  El juego de las 100 cajas
+            </div>
+            <table style="text-align: left; width: 500px; height: 500px; background-color: lime; margin-left: auto; margin-right: auto;" id="tabla" border="2" cellpadding="2" cellspacing="2">
+                  <tbody>
+                        <tr>
+                              <td class="click" id="0">
+                                    <br>
+                              </td>
+                              <td class="click" id="1">
+                                    <br>
+                              </td>
+                              <td class="click" id="2">
+                                    <br>
+                              </td>
+                              <td class="click" id="3">
+                                    <br>
+                              </td>
+                              <td class="click" id="4">
+                                    <br>
+                              </td>
+                              <td class="click" id="5">
+                                    <br>
+                              </td>
+                              <td class="click" id="6">
+                                    <br>
+                              </td>
+                              <td class="click" id="7">
+                                    <br>
+                              </td>
+                              <td class="click" id="8">
+                                    <br>
+                              </td>
+                              <td class="click" id="9">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="10">
+                                    <br>
+                              </td>
+                              <td class="click" id="11">
+                                    <br>
+                              </td>
+                              <td class="click" id="12">
+                                    <br>
+                              </td>
+                              <td class="click" id="13">
+                                    <br>
+                              </td>
+                              <td class="click" id="14">
+                                    <br>
+                              </td>
+                              <td class="click" id="15">
+                                    <br>
+                              </td>
+                              <td class="click" id="16">
+                                    <br>
+                              </td>
+                              <td class="click" id="17">
+                                    <br>
+                              </td>
+                              <td class="click" id="18">
+                                    <br>
+                              </td>
+                              <td class="click" id="19">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="20">
+                                    <br>
+                              </td>
+                              <td class="click" id="21">
+                                    <br>
+                              </td>
+                              <td class="click" id="22">
+                                    <br>
+                              </td>
+                              <td class="click" id="23">
+                                    <br>
+                              </td>
+                              <td class="click" id="24">
+                                    <br>
+                              </td>
+                              <td class="click" id="25">
+                                    <br>
+                              </td>
+                              <td class="click" id="26">
+                                    <br>
+                              </td>
+                              <td class="click" id="27">
+                                    <br>
+                              </td>
+                              <td class="click" id="28">
+                                    <br>
+                              </td>
+                              <td class="click" id="29">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="30">
+                                    <br>
+                              </td>
+                              <td class="click" id="31">
+                                    <br>
+                              </td>
+                              <td class="click" id="32">
+                                    <br>
+                              </td>
+                              <td class="click" id="33">
+                                    <br>
+                              </td>
+                              <td class="click" id="34">
+                                    <br>
+                              </td>
+                              <td class="click" id="35">
+                                    <br>
+                              </td>
+                              <td class="click" id="36">
+                                    <br>
+                              </td>
+                              <td class="click" id="37">
+                                    <br>
+                              </td>
+                              <td class="click" id="38">
+                                    <br>
+                              </td>
+                              <td class="click" id="39">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="40">
+                                    <br>
+                              </td>
+                              <td class="click" id="41">
+                                    <br>
+                              </td>
+                              <td class="click" id="42">
+                                    <br>
+                              </td>
+                              <td class="click" id="43">
+                                    <br>
+                              </td>
+                              <td class="click" id="44">
+                                    <br>
+                              </td>
+                              <td class="click" id="45">
+                                    <br>
+                              </td>
+                              <td class="click" id="46">
+                                    <br>
+                              </td>
+                              <td class="click" id="47">
+                                    <br>
+                              </td>
+                              <td class="click" id="48">
+                                    <br>
+                              </td>
+                              <td class="click" id="49">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="50">
+                                    <br>
+                              </td>
+                              <td class="click" id="51">
+                                    <br>
+                              </td>
+                              <td class="click" id="52">
+                                    <br>
+                              </td>
+                              <td class="click" id="53">
+                                    <br>
+                              </td>
+                              <td class="click" id="54">
+                                    <br>
+                              </td>
+                              <td class="click" id="55">
+                                    <br>
+                              </td>
+                              <td class="click" id="56">
+                                    <br>
+                              </td>
+                              <td class="click" id="57">
+                                    <br>
+                              </td>
+                              <td class="click" id="58">
+                                    <br>
+                              </td>
+                              <td class="click" id="59">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="60">
+                                    <br>
+                              </td>
+                              <td class="click" id="61">
+                                    <br>
+                              </td>
+                              <td class="click" id="62">
+                                    <br>
+                              </td>
+                              <td class="click" id="63">
+                                    <br>
+                              </td>
+                              <td class="click" id="64">
+                                    <br>
+                              </td>
+                              <td class="click" id="65">
+                                    <br>
+                              </td>
+                              <td class="click" id="66">
+                                    <br>
+                              </td>
+                              <td class="click" id="67">
+                                    <br>
+                              </td>
+                              <td class="click" id="68">
+                                    <br>
+                              </td>
+                              <td class="click" id="69">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="70">
+                                    <br>
+                              </td>
+                              <td class="click" id="71">
+                                    <br>
+                              </td>
+                              <td class="click" id="72">
+                                    <br>
+                              </td>
+                              <td class="click" id="73">
+                                    <br>
+                              </td>
+                              <td class="click" id="74">
+                                    <br>
+                              </td>
+                              <td class="click" id="75">
+                                    <br>
+                              </td>
+                              <td class="click" id="76">
+                                    <br>
+                              </td>
+                              <td class="click" id="77">
+                                    <br>
+                              </td>
+                              <td class="click" id="78">
+                                    <br>
+                              </td>
+                              <td class="click" id="79">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="80">
+                                    <br>
+                              </td>
+                              <td class="click" id="81">
+                                    <br>
+                              </td>
+                              <td class="click" id="82">
+                                    <br>
+                              </td>
+                              <td class="click" id="83">
+                                    <br>
+                              </td>
+                              <td class="click" id="84">
+                                    <br>
+                              </td>
+                              <td class="click" id="85">
+                                    <br>
+                              </td>
+                              <td class="click" id="86">
+                                    <br>
+                              </td>
+                              <td class="click" id="87">
+                                    <br>
+                              </td>
+                              <td class="click" id="88">
+                                    <br>
+                              </td>
+                              <td class="click" id="89">
+                                    <br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td class="click" id="90">
+                                    <br>
+                              </td>
+                              <td class="click" id="91">
+                                    <br>
+                              </td>
+                              <td class="click" id="92">
+                                    <br>
+                              </td>
+                              <td class="click" id="93">
+                                    <br>
+                              </td>
+                              <td class="click" id="94">
+                                    <br>
+                              </td>
+                              <td class="click" id="95">
+                                    <br>
+                              </td>
+                              <td class="click" id="96">
+                                    <br>
+                              </td>
+                              <td class="click" id="97">
+                                    <br>
+                              </td>
+                              <td class="click" id="98">
+                                    <br>
+                              </td>
+                              <td class="click" id="99">
+                                    <br>
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+            <script>
+                  let regla = "Se elige una caja con el mouse. Clic con el botón izquierdo. \n \n En las próximas jugadas sólo se pueden elegir las cajas resaltadas: \n la tercera caja hacia la derecha, izquierda, arriba o abajo; \n o la segunda en cualquiera de las diagonales. \n \n  Hay que tratar de completar las 100 cajas. ";
+                  alert(regla);
+                  var h = 1;
+                  var carriba = -1;
+                  var cabajo = -1;
+                  var cderecha = -1;
+                  var cizquierda = -1;
+                  var cdiagdera = -1;
+                  var cdiagizqa = -1;
+                  var cdiagdera = -1;
+                  var cdiagderb = -1;
+                  var si = 1;
+                  let celda = [];
+                  document.querySelectorAll(".click").forEach(el => {
+                        el.addEventListener("click", e => {
+                              const id = e.target.getAttribute("id");
+                              celda.push(id);
+                              if (h > 1) { celdaspermitidas(id) };
+                              if (si == 1) {
+                                    document.getElementById(id).style.background = "white";
+                                    document.getElementById(id).innerHTML = h;
+                                    cambiafondo(id);
+                                    celdaelige(id);
+                                    h += 1;
+                              }
+                              si = 1;
+                        });
+                  });
+
+                  function celdaelige(ce) {
+                        const fila = Math.trunc(ce / 10);
+                        const colu = ce % 10;
+
+                        //  Celda arriba
+                        carriba = 10 * (fila - 3) + colu;
+                        if (fila - 3 >= 0) {
+                              document.getElementById(carriba).style.background = "aqua";
+                        }
+
+                        //  Celda abajo
+                        cabajo = 10 * (fila + 3) + colu;
+                        if (fila + 3 < 10) {
+                              document.getElementById(cabajo).style.background = "aqua";
+                        }
+
+                        //  Celda izquierda
+                        cizquierda = 10 * fila + (colu - 3);
+                        if (colu - 3 >= 0) {
+                              document.getElementById(cizquierda).style.background = "aqua";
+                        }
+
+                        //  Celda derecha
+                        cderecha = 10 * fila + (colu + 3);
+                        if (colu + 3 < 10) {
+                              document.getElementById(cderecha).style.background = "aqua";
+                        }
+
+                        //  Celda diagonal izquierda arriba
+                        cdiagizqa = 10 * (fila - 2) + (colu - 2);
+                        if (fila - 2 >= 0 && colu - 2 >= 0) {
+                              document.getElementById(cdiagizqa).style.background = "aqua";
+                        }
+
+                        //  Celda diagonal derecha arriba
+                        cdiagdera = 10 * (fila - 2) + (colu + 2);
+                        if (fila - 2 >= 0 && colu + 2 < 10) {
+                              document.getElementById(cdiagdera).style.background = "aqua";
+                        }
+
+                        //  Celda diagonal izquierda abajo
+                        cdiagizqb = 10 * (fila + 2) + (colu - 2);
+                        if (fila + 2 < 10 && colu - 2 >= 0) {
+                              document.getElementById(cdiagizqb).style.background = "aqua";
+                        }
+
+                        //  Celda diagonal derecha abajo
+                        cdiagderb = 10 * (fila + 2) + (colu + 2);
+                        if (fila + 2 < 10 && colu + 2 < 10) {
+                              document.getElementById(cdiagderb).style.background = "aqua";
+                        }
+
+                        //  Celda ya elegida
+                        var long = celda.length;
+                        for (let i = 0; i < long - 1; i++) {
+                              document.getElementById(celda[i]).style.background = "lime";
+
+                        }
+
+                        //   Fin del juego
+                        for (let aq = 0; aq < 100; aq++) {
+
+                              var celbg = document.getElementById(aq).style.background;
+                              if (celbg == "aqua") {
+                                    break;
+                              } else {
+                                    if (h == 100) { alert("Felicitaciones, ganaste el juego") };
+                              }
+                              if (aq == 99 && h < 100) {
+                                    let msj = "Fin del juego. Perdiste \n Tu puntaje es: " + h;
+                                    alert(msj);
+                              }
+
+                        }
+
+                  }
+
+                  function cambiafondo(cf) {
+                        if (h > 1) {
+                              if (carriba > 0 && carriba < 100) { document.getElementById(carriba).style.background = "lime" };
+                              if (cabajo > 0 && cabajo < 100) { document.getElementById(cabajo).style.background = "lime" };
+                              if (cizquierda >= 0 && cizquierda < 100) { document.getElementById(cizquierda).style.background = "lime" };
+                              if (cderecha > 0 && cderecha < 100) { document.getElementById(cderecha).style.background = "lime" };
+                              if (cdiagizqa >= 0 && cdiagizqa < 100) { document.getElementById(cdiagizqa).style.background = "lime" };
+                              if (cdiagdera > 0 && cdiagdera < 100) { document.getElementById(cdiagdera).style.background = "lime" };
+                              if (cdiagizqb > 0 && cdiagizqb < 100) { document.getElementById(cdiagizqb).style.background = "lime" };
+                              if (cdiagderb > 0 && cdiagderb < 100) { document.getElementById(cdiagderb).style.background = "lime" };
+                        }
+                  }
+
+                  function celdaspermitidas(cp) {
+                        var cc = document.getElementById(cp).style.background;
+                        if (cc != "aqua" || cc == "white") {
+                              alert("Celda no permitida. Sólo las sombreadas");
+                              si = 0;
+                              return si;
+                        }
+                  }
+            </script>
+      </body>
+</html>
